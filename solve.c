@@ -88,7 +88,7 @@ static void get_possibilities(int *possibilities, int row_num, int col_num) {
  - if a cell's value is inferred, the process restarts at (0, 0)
  - if a cell cannot take ANY values, CONTRADICTION is returned
  - if the process finishes with no empty cells, SUCCESS is returned
- - if the processes finished with empty cells and no contradiction, MAKE_GUESS is returned */
+ - if the process finishes with empty cells and no contradiction, MAKE_GUESS is returned */
 static int infer_values_with_certainty(void) {
     extern int board[9][9];
     extern int *next_fill;
